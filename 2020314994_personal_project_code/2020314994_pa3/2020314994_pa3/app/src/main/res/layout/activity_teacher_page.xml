@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherPage">
+
+    <ImageView
+        android:id="@+id/TeacherPageBackground"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/teacherbh"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TeacherNameTextView"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text=""
+        android:gravity="end"
+        android:fontFamily="@font/nanumsquareacr"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/MyClassTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="마이클래스"
+        android:fontFamily="@font/nanumsquareacr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="130dp"
+        />
+    <TextView
+        android:id="@+id/tGradeTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="성적입력"
+        android:fontFamily="@font/nanumsquareacr"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/TeacherPageBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tGradeDescTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="학생의 시험 성적을 입력하세요."
+        android:fontFamily="@font/nanumone"
+        android:textSize="15sp"
+        android:textColor="@color/darkgrey"
+        app:layout_constraintTop_toBottomOf="@id/tGradeTitleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/tGradeButton"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="성적입력하기"
+        android:fontFamily="@font/nanumone"
+        app:layout_constraintTop_toBottomOf="@id/tGradeDescTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/green"/>
+
+
+    <TextView
+        android:id="@+id/tnumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="연락처 관리"
+        android:fontFamily="@font/nanumsquareacr"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tGradeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/tnumDescTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="연락처를 수정할 수 있습니다."
+        android:fontFamily="@font/nanumone"
+        android:textSize="15sp"
+        android:textColor="@color/darkgrey"
+        app:layout_constraintTop_toBottomOf="@id/tnumTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp" />
+
+    <Button
+        android:id="@+id/tnumnButton"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="연락처수정"
+        android:fontFamily="@font/nanumone"
+        app:layout_constraintTop_toBottomOf="@id/tnumDescTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/green"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentPage">
+
+    <ImageView
+        android:id="@+id/myPageBackground"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/stdtbg"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stdtNameTextView"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text=""
+        android:gravity="right"
+        android:fontFamily="@font/nanumsquareacr"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/myPageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="마이페이지"
+        android:fontFamily="@font/nanumsquareacr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="130dp"
+         />
+
+    <TextView
+        android:id="@+id/sGradeTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="성적조회"
+        android:fontFamily="@font/nanumsquareacr"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/myPageBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/sGradeDescTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="금주의 시험 성적을 조회할 수 있습니다."
+        android:fontFamily="@font/nanumone"
+        android:textSize="15sp"
+        android:textColor="@color/darkgrey"
+        app:layout_constraintTop_toBottomOf="@id/sGradeTitleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/sGradeButton"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="성적조회하기"
+        android:fontFamily="@font/nanumone"
+        app:layout_constraintTop_toBottomOf="@id/sGradeDescTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/green"/>
+
+    <TextView
+        android:id="@+id/sNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="연락처"
+        android:fontFamily="@font/nanumsquareacr"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/sGradeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/sNumberDescTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="학원 선생님들의 연락처를 확인하세요."
+        android:fontFamily="@font/nanumone"
+        android:textSize="15sp"
+        android:textColor="@color/darkgrey"
+        app:layout_constraintTop_toBottomOf="@id/sNumberTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp" />
+
+    <Button
+        android:id="@+id/sNumberButton"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="연락처확인"
+        android:fontFamily="@font/nanumone"
+        app:layout_constraintTop_toBottomOf="@id/sNumberDescTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/green"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
